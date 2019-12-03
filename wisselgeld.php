@@ -56,7 +56,7 @@ foreach($centen as $cent) {
     if ($restbedrag >= $cent) {
         $aantal = floor($restbedrag / $cent);
         $restbedrag = fmod($restbedrag, $cent);
-        echo "$aantal keer $cent cent.";
+        echo "$aantal keer $cent cent." . PHP_EOL;
     }
 }
 ?>
